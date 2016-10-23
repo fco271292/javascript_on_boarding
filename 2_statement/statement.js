@@ -10,3 +10,21 @@ function conditionalIfElse(){
 	}
 	
 }
+
+function conditionalSwitch(){
+	
+	var color = 255;
+
+	switch(color){
+		case 255:
+			alert("Color blanco");
+		break;
+		case 0:
+			alert("Color negro");
+		break;
+		default:
+			alert("No se encontro!");
+		break;
+	}
+
+}
