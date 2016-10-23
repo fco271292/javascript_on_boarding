@@ -32,3 +32,31 @@ function conditionalSwitch(){
 function launchException(){
 	throw "Internal Server Error: 500!"; 
 }
+
+function manageTryCatch(){
+
+	var numberString = "diez";
+	var numberInt = 10;
+
+	try{
+		alert(convertStringToNumber(numberString))
+	}
+	catch(error){
+		alert("Error: "+error)
+	}
+	finally{
+		console.log("Finalizo.")
+	}
+	
+}
+
+function convertStringToNumber(number){
+
+	if(!isNaN(number)){
+		return parseInt(number);
+	}
+	else{
+		throw "No se puede convertir el dato";
+	}
+
+}
