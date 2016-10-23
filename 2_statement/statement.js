@@ -12,7 +12,7 @@ function conditionalIfElse(){
 }
 
 function conditionalSwitch(){
-	
+
 	var color = 255;
 
 	switch(color){
@@ -27,4 +27,8 @@ function conditionalSwitch(){
 		break;
 	}
 
+}
+
+function launchException(){
+	throw "Internal Server Error: 500!"; 
 }
