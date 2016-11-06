@@ -30,9 +30,11 @@ function functionDefaultJS(argument) {
 	var noIsNumber = "Uno"
 	var number = 3.1416
 	var character = "JS"
+	var date = new Date()
 	alert(`Evaluar numero finito ${numberInfinite}... ${isFinite(numberInfinite)}
 		\n Evaluar si es un numero ${noIsNumber}... ${isNaN(noIsNumber)}
 		\n Numero como cadena: ${number}, Numero entero: ${parseInt(number)}, Numero flotante: ${parseFloat(number)}
 		\n Caracter ${character}, Numero: ${Number(character)}, Cadena: ${String(character)}
+		\n Fecha ${date}
 		`)
 }
