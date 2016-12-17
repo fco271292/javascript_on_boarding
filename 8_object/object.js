@@ -31,3 +31,25 @@ function createPerson(name,lastName,birthDate,gender) {
 	person.gender=gender
 	console.log(`Nuevo atributo genero: ${person.gender}`)
 }
+
+function Car(trademark,model,year){
+	var car = {
+		marca : trademark,
+		modelo : model,
+		anio : year,
+		antiguedad : 0,
+		//Se agrega setter para la antiguedad
+		set setYears(anio) { 
+			var now = new Date()
+			var currentYear = now.toJSON().slice(0,4)
+			this.antiguedad = new Number(currentYear) - new Number(anio)
+			//console.log(`Antiguedad: ${this.antiguedad}`)
+		},
+		//Se agrega getter para la antiguedad
+		get getYears() {
+			return this.antiguedad
+		}
+	}
+	car.setYears = year
+	console.log(`Carro \n Marca: ${car.marca}, Modelo: ${car.modelo}, Año: ${car.anio}, Antiguedad: ${car.getYears}`)
+}
