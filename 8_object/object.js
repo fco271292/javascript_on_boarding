@@ -1,4 +1,4 @@
-function functionCreatePerson(name,lastName,birthDate) {
+function Person(name,lastName,birthDate) {
 	var person = {
 		name:name,
 		lastName:lastName,
@@ -20,4 +20,14 @@ function functionCreatePerson(name,lastName,birthDate) {
 		}
 	}
 	console.log(`Nombre ${person.name}, Apellido ${person.lastName}, Fecha de nacimiento ${person.birthDate}, Edad ${person.age()}`)
+}
+
+function addPropertyPerson(argument) {
+	Person.prototype.gender=""
+}
+
+function createPerson(name,lastName,birthDate,gender) {
+	var person = new Person(name,lastName,birthDate)
+	person.gender=gender
+	console.log(`Nuevo atributo genero: ${person.gender}`)
 }
