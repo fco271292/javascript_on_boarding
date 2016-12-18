@@ -53,3 +53,17 @@ function Car(trademark,model,year){
 	car.setYears = year
 	console.log(`Carro \n Marca: ${car.marca}, Modelo: ${car.modelo}, Año: ${car.anio}, Antiguedad: ${car.getYears}`)
 }
+
+function deletePropertyPerson(name,lastName,birthDate) {
+	var person = new Person(name,lastName,birthDate)
+	delete person.gender
+	//Verifica que exista la propiedad genero en objeto persona 
+	console.log(`Existe propiedad genero en persona ${ person.gender ? "Existe" : "No existe" }`)
+}
+
+function compareObjects(argument) {
+	var number = 1
+	var string = "1"
+	console.log(`Operador de igualdad, compara valor: ${number == string}`)
+	console.log(`Operador estrictamente igual, compara valor y tipo: ${number === string}`)
+}
